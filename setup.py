@@ -29,7 +29,7 @@ setup(
         "python-libcombine",
         "scipy",
         "texttable",
-        "pydantic,
+        "pydantic",
         "deprecation",
         "deepdiff",
         "python-multipart",
