@@ -29,7 +29,7 @@ setup(
         "python-libcombine",
         "scipy",
         "texttable",
-        "pydantic==1.10.12",
+        "pydantic,
         "deprecation",
         "deepdiff",
         "python-multipart",
@@ -38,7 +38,7 @@ setup(
         "numexpr",
         "seaborn",
         "plotly",
-        "pyyaml==6.0.1",
+        "pyyaml",
         "deprecation",
         "xmltodict",
         "requests"
