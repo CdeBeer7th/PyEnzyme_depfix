@@ -5,7 +5,7 @@ python-libcombine
 scipy
 texttable
 pydataverse
-pydantic==1.8.2
+pydantic
 deprecation
 deepdiff
 python-multipart

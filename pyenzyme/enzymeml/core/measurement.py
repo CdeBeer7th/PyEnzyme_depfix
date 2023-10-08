@@ -45,7 +45,7 @@ class Measurement(EnzymeMLBase):
     temperature_unit: Optional[str] = Field(
         None,
         description="Unit of the temperature of the reaction.",
-        regex=r"kelvin|Kelvin|k|K|celsius|Celsius|C|c",
+        pattern=r"kelvin|Kelvin|k|K|celsius|Celsius|C|c",
     )
 
     ph: Optional[float] = Field(
@@ -71,7 +71,7 @@ class Measurement(EnzymeMLBase):
     )
 
     id: Optional[str] = Field(
-        None, description="Unique identifier of the measurement.", regex=r"m[\d]+"
+        None, description="Unique identifier of the measurement.", pattern=r"m[\d]+"
     )
 
     uri: Optional[str] = Field(

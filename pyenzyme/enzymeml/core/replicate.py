@@ -30,13 +30,13 @@ class Replicate(EnzymeMLBase):
     species_id: str = Field(
         ...,
         description="Unique identifier of the species that has been measured.",
-        regex=r"[s|r|p][\d]+",
+        pattern=r"[s|r|p][\d]+",
     )
 
     measurement_id: Optional[str] = Field(
         None,
         description="Unique identifier of the measurement that the replicate is part of.",
-        regex=r"m[\d]+",
+        pattern=r"m[\d]+",
     )
 
     data_type: DataTypes = Field(

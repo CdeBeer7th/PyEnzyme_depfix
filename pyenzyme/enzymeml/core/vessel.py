@@ -48,7 +48,7 @@ class Vessel(EnzymeMLBase):
         None,
         description="Unique identifier of the vessel.",
         template_alias="ID",
-        regex=r"v[\d]+",
+        pattern=r"v[\d]+",
     )
 
     uri: Optional[str] = Field(

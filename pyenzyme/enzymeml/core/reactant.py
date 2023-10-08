@@ -4,15 +4,16 @@
 # License: BSD-2 clause
 # Copyright (c) 2022 Institute of Biochemistry and Technical Biochemistry Stuttgart
 
-from pydantic import Field
-from typing import Dict, TYPE_CHECKING, Optional, Union, Any
 from dataclasses import dataclass
+from typing import TYPE_CHECKING, Any, Dict, Optional, Union
 
-from pyenzyme.enzymeml.core.enzymemlbase import EnzymeMLBase
+from pydantic import Field
+
 from pyenzyme.enzymeml.core.abstract_classes import AbstractSpecies
-from pyenzyme.enzymeml.core.ontology import SBOTerm
+from pyenzyme.enzymeml.core.enzymemlbase import EnzymeMLBase
 from pyenzyme.enzymeml.core.exceptions import ChEBIIdentifierError
-from pyenzyme.enzymeml.core.utils import type_checking, deprecated_getter
+from pyenzyme.enzymeml.core.ontology import SBOTerm
+from pyenzyme.enzymeml.core.utils import deprecated_getter, type_checking
 
 if TYPE_CHECKING:  # pragma: no cover
     static_check_init_args = dataclass
@@ -22,7 +23,6 @@ else:
 
 @static_check_init_args
 class Reactant(EnzymeMLBase, AbstractSpecies):
-
     name: Optional[str] = Field(
         None, description="Name of the reactant.", template_alias="Name"
     )
@@ -53,7 +53,7 @@ class Reactant(EnzymeMLBase, AbstractSpecies):
         None,
         description="Unique identifier of the protein.",
         template_alias="ID",
-        regex=r"s[\d]+",
+        pattern=r"s[\d]+",
     )
 
     meta_id: Optional[str] = Field(
@@ -131,8 +131,9 @@ class Reactant(EnzymeMLBase, AbstractSpecies):
 
     @staticmethod
     def _getChEBIParameters(chebi_id: Union[str, int]) -> Dict[str, Any]:
-        import requests
         import xml.etree.ElementTree as ET
+
+        import requests
 
         # Send request to CHEBI database
         endpoint = f"https://www.ebi.ac.uk/webservices/chebi/2.0/test/getCompleteEntity?chebiId={chebi_id}"

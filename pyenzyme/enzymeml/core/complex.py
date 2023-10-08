@@ -40,7 +40,7 @@ class Complex(EnzymeMLBase, AbstractSpecies):
     vessel_id: str = Field(
         ...,
         description="Identifier of the vessel in which the protein was stored.",
-        regex=r"v[\d]+",
+        pattern=r"v[\d]+",
     )
 
     init_conc: Optional[float] = Field(
@@ -63,7 +63,7 @@ class Complex(EnzymeMLBase, AbstractSpecies):
     )
 
     id: Optional[str] = Field(
-        None, description="Unique identifier of the protein.", regex=r"c[\d]+"
+        None, description="Unique identifier of the protein.", pattern=r"c[\d]+"
     )
 
     boundary: bool = Field(

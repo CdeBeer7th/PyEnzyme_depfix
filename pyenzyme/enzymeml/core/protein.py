@@ -39,7 +39,7 @@ class Protein(EnzymeMLBase, AbstractSpecies):
         ...,
         description="Identifier of the vessel in which the protein was stored.",
         template_alias="Vessel",
-        regex=r"v[\d.]+",
+        pattern=r"v[\d.]+",
     )
 
     init_conc: Optional[float] = Field(
@@ -62,7 +62,7 @@ class Protein(EnzymeMLBase, AbstractSpecies):
         None,
         description="Unique identifier of the protein.",
         template_alias="ID",
-        regex=r"p[\d]+",
+        pattern=r"p[\d]+",
     )
 
     meta_id: Optional[str] = Field(
@@ -74,7 +74,7 @@ class Protein(EnzymeMLBase, AbstractSpecies):
         None,
         description="EC number of the protein.",
         template_alias="EC Number",
-        regex=r"(\d+.)(\d+.)(\d+.)(\d+)",
+        pattern=r"(\d+.)(\d+.)(\d+.)(\d+)",
     )
 
     organism: Optional[str] = Field(

@@ -98,7 +98,7 @@ class EnzymeReaction(EnzymeMLBase):
     temperature_unit: Optional[str] = Field(
         None,
         description="Unit of the temperature of the reaction.",
-        regex=r"kelvin|Kelvin|k|K|celsius|Celsius|C|c",
+        pattern=r"kelvin|Kelvin|k|K|celsius|Celsius|C|c",
         template_alias="Temperature unit",
     )
 
@@ -124,7 +124,7 @@ class EnzymeReaction(EnzymeMLBase):
         None,
         description="Unique identifier of the reaction.",
         template_alias="ID",
-        regex=r"r[\d]+",
+        pattern=r"r[\d]+",
     )
 
     uri: Optional[str] = Field(
@@ -658,12 +658,12 @@ class EnzymeReaction(EnzymeMLBase):
     def _parse_equation_side(elements: str, enzmldoc, fun):
         """Parses a side from a reaction equation."""
 
-        # Setup Regex
-        regex = r"(^\d*[.,]\d*)?\s?(.*)"
-        regex = re.compile(regex)
+        # Setup pattern
+        pattern = r"(^\d*[.,]\d*)?\s?(.*)"
+        pattern = re.compile(pattern)
 
         for element in elements.split(" + "):
-            stoichiometry, species = regex.findall(element)[0]
+            stoichiometry, species = pattern.findall(element)[0]
 
             if len(stoichiometry) == 0:
                 stoichiometry = 1.0

@@ -36,7 +36,7 @@ class Creator(EnzymeMLBase):
     )
 
     id: Optional[str] = Field(
-        None, description="Unique identifier of the protein.", regex=r"a[\d]+"
+        None, description="Unique identifier of the protein.", pattern=r"a[\d]+"
     )
 
     @validator("given_name", "family_name", "mail", pre=True)
