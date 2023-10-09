@@ -208,8 +208,8 @@ class KineticModel(EnzymeMLBase):
         for node in ast.walk(ast.parse(equation)):
             if isinstance(node, ast.Name):
                 name = node.id
-                regex = re.compile(r"[s|p|c]\d*")
-                if not bool(regex.match(name)) and "_" + name not in cls.__dict__:
+                pattern = re.compile(r"[s|p|c]\d*")
+                if not bool(pattern.match(name)) and "_" + name not in cls.__dict__:
                     cls.addParameter(name=name)
                 else:
                     used_species.append(name)
