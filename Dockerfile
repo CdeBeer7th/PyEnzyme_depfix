@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt-get purge -y --auto-remove
 
 
-RUN pip3 install git+https://github.com/EnzymeML/PyEnzyme.git
+RUN pip3 install git+https://github.com/CdeBeer7th/PyEnzyme_depfix.git
 RUN pip3 install fastapi uvicorn jinja2
 
 COPY pyenzyme_server.py /app

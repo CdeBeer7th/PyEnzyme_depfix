@@ -14,7 +14,7 @@ import setuptools
 from setuptools import setup
 
 setup(
-    name="PyEnzyme",
+    name="PyEnzyme_depfix",
     version="1.1.4.1",
     description="Handling of EnzymeML files",
     url="https://github.com/EnzymeML/PyEnzyme",
