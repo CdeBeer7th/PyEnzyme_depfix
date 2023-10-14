@@ -14,10 +14,10 @@ import setuptools
 from setuptools import setup
 
 setup(
-    name="PyEnzyme_depfix",
+    name="pyenzyme-depfix",
     version="1.1.4.1",
     description="Handling of EnzymeML files",
-    url="https://github.com/EnzymeML/PyEnzyme",
+    url="https://github.com/CdeBeer7th/PyEnzyme_depfix.git",
     author="Range, Jan",
     author_email="jan.range@simtech.uni-stuttgart.de",
     license="BSD2 Clause",
