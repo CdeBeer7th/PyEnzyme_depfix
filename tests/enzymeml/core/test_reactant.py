@@ -1,5 +1,5 @@
-from pyenzyme.enzymeml.core.reactant import Reactant
-from pyenzyme.enzymeml.core.ontology import SBOTerm
+from pyenzymedepfix.enzymeml.core.reactant import Reactant
+from pyenzymedepfix.enzymeml.core.ontology import SBOTerm
 
 
 class TestReactant:

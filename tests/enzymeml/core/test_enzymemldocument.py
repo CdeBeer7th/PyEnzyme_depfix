@@ -1,9 +1,9 @@
 import os
 import pytest
 
-from pyenzyme.enzymeml.core.enzymemldocument import EnzymeMLDocument
-from pyenzyme.enzymeml.core.abstract_classes import AbstractSpecies
-from pyenzyme.enzymeml.core.ontology import SBOTerm
+from pyenzymedepfix.enzymeml.core.enzymemldocument import EnzymeMLDocument
+from pyenzymedepfix.enzymeml.core.abstract_classes import AbstractSpecies
+from pyenzymedepfix.enzymeml.core.ontology import SBOTerm
 
 
 class TestEnzymeMLDocument:

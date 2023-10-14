@@ -2,7 +2,7 @@ import unittest
 import COPASI
 import os
 
-from pyenzyme.thinlayers import ThinLayerCopasi
+from pyenzymedepfix.thinlayers import ThinLayerCopasi
 
 this_dir = os.path.abspath(os.path.dirname(__file__))
 temp_dir = os.path.join(this_dir, 'tmp')

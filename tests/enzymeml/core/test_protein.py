@@ -1,5 +1,5 @@
-from pyenzyme.enzymeml.core.protein import Protein
-from pyenzyme.enzymeml.core.ontology import SBOTerm
+from pyenzymedepfix.enzymeml.core.protein import Protein
+from pyenzymedepfix.enzymeml.core.ontology import SBOTerm
 
 
 class TestProtein:

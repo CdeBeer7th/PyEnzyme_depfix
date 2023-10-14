@@ -1,6 +1,6 @@
-from pyenzyme.enzymeml.models.kineticmodel import KineticModel
-from pyenzyme.enzymeml.models.kineticmodel import KineticParameter
-from pyenzyme.enzymeml.core.ontology import SBOTerm
+from pyenzymedepfix.enzymeml.models.kineticmodel import KineticModel
+from pyenzymedepfix.enzymeml.models.kineticmodel import KineticParameter
+from pyenzymedepfix.enzymeml.core.ontology import SBOTerm
 
 
 class TestKineticModel:

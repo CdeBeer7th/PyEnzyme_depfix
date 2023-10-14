@@ -1,6 +1,6 @@
 import pytest
 
-from pyenzyme.enzymeml.core.measurement import Measurement
+from pyenzymedepfix.enzymeml.core.measurement import Measurement
 
 
 class TestMeasurement:

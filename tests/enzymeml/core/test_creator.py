@@ -1,7 +1,7 @@
 import pytest
 
 from pydantic import ValidationError
-from pyenzyme.enzymeml.core.creator import Creator
+from pyenzymedepfix.enzymeml.core.creator import Creator
 
 
 class TestCreator:

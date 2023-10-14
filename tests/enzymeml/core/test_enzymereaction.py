@@ -1,8 +1,8 @@
 import pytest
 
-from pyenzyme.enzymeml.core.enzymereaction import EnzymeReaction, ReactionElement
-from pyenzyme.enzymeml.core.ontology import SBOTerm
-from pyenzyme.enzymeml.core.exceptions import SpeciesNotFoundError
+from pyenzymedepfix.enzymeml.core.enzymereaction import EnzymeReaction, ReactionElement
+from pyenzymedepfix.enzymeml.core.ontology import SBOTerm
+from pyenzymedepfix.enzymeml.core.exceptions import SpeciesNotFoundError
 
 
 class TestEnzymeReactionBasic:

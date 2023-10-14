@@ -1,6 +1,6 @@
 import json
 
-from pyenzyme.enzymeml.core.enzymemldocument import EnzymeMLDocument
+from pyenzymedepfix.enzymeml.core.enzymemldocument import EnzymeMLDocument
 
 
 class TestTemplateReader:

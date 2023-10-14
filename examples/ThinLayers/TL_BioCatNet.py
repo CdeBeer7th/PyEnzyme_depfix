@@ -14,13 +14,13 @@ import pandas as pd
 import numpy as np
 import re
 import os
-from pyenzyme.enzymeml.core.enzymemldocument import EnzymeMLDocument
-from pyenzyme.enzymeml.core.vessel import Vessel
-from pyenzyme.enzymeml.core.reactant import Reactant
-from pyenzyme.enzymeml.core.protein import Protein
-from pyenzyme.enzymeml.core.enzymereaction import EnzymeReaction
-from pyenzyme.enzymeml.core.replicate import Replicate
-from pyenzyme.enzymeml.tools.enzymemlwriter import EnzymeMLWriter
+from pyenzymedepfix.enzymeml.core.enzymemldocument import EnzymeMLDocument
+from pyenzymedepfix.enzymeml.core.vessel import Vessel
+from pyenzymedepfix.enzymeml.core.reactant import Reactant
+from pyenzymedepfix.enzymeml.core.protein import Protein
+from pyenzymedepfix.enzymeml.core.enzymereaction import EnzymeReaction
+from pyenzymedepfix.enzymeml.core.replicate import Replicate
+from pyenzymedepfix.enzymeml.tools.enzymemlwriter import EnzymeMLWriter
 from copy import deepcopy
 
 

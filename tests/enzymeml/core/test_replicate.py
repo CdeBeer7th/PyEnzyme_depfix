@@ -1,8 +1,8 @@
 import pytest
 
-from pyenzyme.enzymeml.core.replicate import Replicate
-from pyenzyme.enzymeml.core.ontology import DataTypes
-from pyenzyme.enzymeml.core.exceptions import DataError
+from pyenzymedepfix.enzymeml.core.replicate import Replicate
+from pyenzymedepfix.enzymeml.core.ontology import DataTypes
+from pyenzymedepfix.enzymeml.core.exceptions import DataError
 
 
 class TestReplicate:

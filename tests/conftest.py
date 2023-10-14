@@ -2,13 +2,13 @@ import pytest
 import json
 import yaml
 
-from pyenzyme.enzymeml.core.enzymemldocument import EnzymeMLDocument
-from pyenzyme.enzymeml.core.measurement import Measurement
-from pyenzyme.enzymeml.core.measurementData import MeasurementData
-from pyenzyme.enzymeml.core.replicate import Replicate
-from pyenzyme.enzymeml.core.enzymereaction import EnzymeReaction
-from pyenzyme.enzymeml.tools.unitcreator import UnitCreator
-from pyenzyme.enzymeml.models.kineticmodel import KineticModel, KineticParameter
+from pyenzymedepfix.enzymeml.core.enzymemldocument import EnzymeMLDocument
+from pyenzymedepfix.enzymeml.core.measurement import Measurement
+from pyenzymedepfix.enzymeml.core.measurementData import MeasurementData
+from pyenzymedepfix.enzymeml.core.replicate import Replicate
+from pyenzymedepfix.enzymeml.core.enzymereaction import EnzymeReaction
+from pyenzymedepfix.enzymeml.tools.unitcreator import UnitCreator
+from pyenzymedepfix.enzymeml.models.kineticmodel import KineticModel, KineticParameter
 
 
 @pytest.fixture

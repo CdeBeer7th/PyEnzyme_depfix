@@ -1,7 +1,7 @@
 import pytest
 
-from pyenzyme.enzymeml.core.measurementData import MeasurementData
-from pyenzyme.enzymeml.core.exceptions import MeasurementDataSpeciesIdentifierError
+from pyenzymedepfix.enzymeml.core.measurementData import MeasurementData
+from pyenzymedepfix.enzymeml.core.exceptions import MeasurementDataSpeciesIdentifierError
 
 
 class TestMeasurementData:

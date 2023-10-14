@@ -5,11 +5,11 @@ from starlette.responses import FileResponse, JSONResponse, HTMLResponse
 from starlette.background import BackgroundTasks
 from fastapi.templating import Jinja2Templates
 
-from pyenzyme.enzymeml.core.enzymemldocument import EnzymeMLDocument
-from pyenzyme.enzymeml.core.measurement import Measurement
-from pyenzyme.enzymeml.tools.validator import EnzymeMLValidator
-from pyenzyme.utils.rest_examples import create_full_example
-from pyenzyme.enzymeml.core.exceptions import (
+from pyenzymedepfix.enzymeml.core.enzymemldocument import EnzymeMLDocument
+from pyenzymedepfix.enzymeml.core.measurement import Measurement
+from pyenzymedepfix.enzymeml.tools.validator import EnzymeMLValidator
+from pyenzymedepfix.utils.rest_examples import create_full_example
+from pyenzymedepfix.enzymeml.core.exceptions import (
     MeasurementDataSpeciesIdentifierError,
     ECNumberError,
     ChEBIIdentifierError,

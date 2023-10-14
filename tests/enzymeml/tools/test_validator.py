@@ -2,8 +2,8 @@ import os
 import yaml
 import pandas as pd
 
-from pyenzyme.enzymeml.tools.validator import EnzymeMLValidator
-from pyenzyme.enzymeml.core.enzymemldocument import EnzymeMLDocument
+from pyenzymedepfix.enzymeml.tools.validator import EnzymeMLValidator
+from pyenzymedepfix.enzymeml.core.enzymemldocument import EnzymeMLDocument
 
 
 class TestValidation:

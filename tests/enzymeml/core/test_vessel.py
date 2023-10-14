@@ -1,4 +1,4 @@
-from pyenzyme.enzymeml.core.vessel import Vessel
+from pyenzymedepfix.enzymeml.core.vessel import Vessel
 
 
 class TestVessel:

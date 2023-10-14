@@ -1,8 +1,8 @@
 import pytest
 
-from pyenzyme.enzymeml.core.complex import Complex
-from pyenzyme.enzymeml.core.ontology import SBOTerm
-from pyenzyme.enzymeml.core.exceptions import ParticipantIdentifierError
+from pyenzymedepfix.enzymeml.core.complex import Complex
+from pyenzymedepfix.enzymeml.core.ontology import SBOTerm
+from pyenzymedepfix.enzymeml.core.exceptions import ParticipantIdentifierError
 
 
 class TestComplex:

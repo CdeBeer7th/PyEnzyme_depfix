@@ -1,8 +1,8 @@
 import libsbml
 
-from pyenzyme.enzymeml.tools.unitcreator import UnitCreator
-from pyenzyme.enzymeml.core.enzymemldocument import EnzymeMLDocument
-from pyenzyme.enzymeml.core.unitdef import UnitDef
+from pyenzymedepfix.enzymeml.tools.unitcreator import UnitCreator
+from pyenzymedepfix.enzymeml.core.enzymemldocument import EnzymeMLDocument
+from pyenzymedepfix.enzymeml.core.unitdef import UnitDef
 
 
 class TestUnitCreator:

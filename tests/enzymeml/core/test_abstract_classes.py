@@ -1,5 +1,5 @@
-from pyenzyme.enzymeml.core.abstract_classes import AbstractSpecies
-from pyenzyme.enzymeml.core.ontology import SBOTerm
+from pyenzymedepfix.enzymeml.core.abstract_classes import AbstractSpecies
+from pyenzymedepfix.enzymeml.core.ontology import SBOTerm
 
 
 class TestAbstractSpecies:
