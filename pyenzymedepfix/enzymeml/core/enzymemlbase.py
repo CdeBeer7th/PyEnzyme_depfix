@@ -17,7 +17,7 @@ logger = logging.getLogger("pyenzyme")
 class EnzymeMLBase(BaseModel):
     class Config:
         validate_assignment = True
-        validate_all = True
+        validate_default = True
 
     def json(self, indent: int = 2, **kwargs):
         return super().json(
