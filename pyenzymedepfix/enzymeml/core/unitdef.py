@@ -135,7 +135,7 @@ class UnitDef(EnzymeMLBase):
     def set_meta_id(cls, id: Optional[str], values: dict):
         """Sets the meta ID when an ID is provided"""
 
-        if id:
+        if id not in [None, ""]:
             # Set Meta ID with ID
             values["meta_id"] = f"METAID_{id.upper()}"
 
@@ -145,7 +145,7 @@ class UnitDef(EnzymeMLBase):
     def check_meta_id(cls, meta_id: Optional[str], values: dict):
         """Checks if the meta ID provided is following the standard"""
 
-        if values.get("meta_id"):
+        if values.get("meta_id") != None:
             # When the ID init already set the meta ID
             return values.get("meta_id")
 

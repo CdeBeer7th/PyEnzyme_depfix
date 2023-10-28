@@ -234,7 +234,7 @@ class EnzymeMLValidator:
         def sort_func(annot):
             """Sort recursion for clean parsing"""
             data_type = repr(annot[1])
-            if "pyenzyme" in data_type:
+            if "pyenzymedepfix" in data_type:
                 return True
             else:
                 return False
@@ -243,10 +243,10 @@ class EnzymeMLValidator:
 
         for name, value in annotations:
 
-            if "pyenzyme.enzymeml" in repr(value) and "ontology" not in repr(value):
+            if "pyenzymedepfix.enzymeml" in repr(value) and "ontology" not in repr(value):
 
                 annot = repr(value)
-                regex = r"(pyenzyme.enzymeml.[a-zA-Z]*.[a-zA-Z]*).([a-zA-Z]*)"
+                regex = r"(pyenzymedepfix.enzymeml.[a-zA-Z]*.[a-zA-Z]*).([a-zA-Z]*)"
                 regex = re.compile(regex)
                 module, cls_name = regex.findall(annot)[0]
 
